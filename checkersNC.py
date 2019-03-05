@@ -2,6 +2,7 @@ from graphics import *
 
 def draw_sq(sX, sY, size, color, win):
     square = Rectangle(Point(sX, sY), Point(sX * 2, sY * 2))
+    square.setFill(color_rgb(255,0,0))
     square.draw(win)
 
 sqSz = 50
