@@ -13,6 +13,8 @@ chWin.setCoords(0, 0, sqSz * 10, sqSz * 10)
 
 for j in range(8):
     for i in range(8):
+        if (i + j) % 2 == 0:
+            sqCol = "red"
+        else:
+            sqCol = "black"
         draw_sq(sqSz * (i + 1), sqSz *(j+1), sqSz, sqCol, chWin)
-
-        
